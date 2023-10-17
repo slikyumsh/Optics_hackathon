@@ -65,11 +65,6 @@ sm.ifcs[sm.cur_surface].profile = EvenPolynomial(r=1./(X[11]), ec = X[16],
 sm.add_surface([-1./(X[17]), X[18], 1.54, 75.0])
 sm.ifcs[sm.cur_surface].profile = EvenPolynomial(r=-1./(X[17]), ec=X[21], 
                                                   coefs=[ Y4[0],Y4[1], Y4[2], Y4[3], Y4[4],Y4[5], Y4[6], Y4[7]])
-ap2 = Circular(0.4)
-sm.ifcs[2].clear_apertures = [ap2]
-
-ap2 = Circular(0.2)
-sm.ifcs[4].clear_apertures = [ap2]
 
 sm.add_surface([-1./(X[21]), X[22]])
 sm.ifcs[sm.cur_surface].profile = EvenPolynomial(r=-1./(X[21]), ec=X[23],
